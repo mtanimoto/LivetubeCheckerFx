@@ -1,0 +1,32 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root {
+    background-color-favorite : linear-gradient(to top right,
+                                     rgba(255,255,255) 0.000%,
+                                     rgba(19,240,190) 30.000%
+                                     rgba(19,240,190) 80.000%
+                                     rgba(19,240,190) 100.000% );
+    text-color-base : black;
+    background-color-row-selected : rgba(41,155,192,0.8);
+}
+.author {
+    -fx-text-fill : blue!important;
+}
+.created {
+    -fx-alignment: CENTER;
+}
+#tabpane * {
+    -fx-font-size: 1.2em;
+}
+.favorite {
+    -fx-background-color : background-color-favorite;
+}
+.table-row-cell:selected, .favorite:selected {
+    -fx-text-fill        : text-color-base;
+    -fx-background-color : background-color-row-selected;
+}
+.table-cell:selected {
+	-fx-border-color : text-color-base;
+}
+.table-cell, .table-row-cell {
+    -fx-text-fill : text-color-base;
+}
